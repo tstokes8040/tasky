@@ -1,0 +1,117 @@
+@color-main: #1874cd;
+@heading-font: 'Gloria Hallelujah', cursive;
+@main-font: 'Roboto', sans-serif;
+@color-even: #dedede;
+@color-odd: #fff;
+
+body {
+  background: #5b656f;
+  font-family: @main-font;
+}
+
+h1 {
+  font-family: @heading-font;
+  text-align: center;
+  color: #fff;
+  font-size: 3em;
+}
+
+h1, h2 {
+  margin: 0;
+}
+
+p {
+  margin: 0;
+}
+
+.content {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 500px;
+  max-width: 96%;
+}
+
+.white-box {
+  background: #fff;
+  border-radius: 3px;
+  padding: 20px;
+  min-height: 200px;
+  max-height: 600px;
+  overflow: auto;
+
+  h2 {
+    color: @color-main;
+    font-size: 1.4em;
+  }
+}
+
+.button {
+  -webkit-appearance: none;
+  border-radius: 0;
+  border: 0;
+  background: @color-main;
+  color: #fff;
+  padding: 5px 10px;
+  height: 30px;
+  &:hover {
+    cursor: pointer;
+  }
+  &.delete-all {
+    margin-top: 10px; 
+  }
+}
+
+.task-list {
+  font-family: @main-font;
+  margin: 20px 0 20px;
+  font-size: 1.2em;
+  border: 1px solid #000;
+
+  .task {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 10px;
+
+    &.even {
+      background: @color-even;
+    }
+
+    &.odd {
+      background: @color-odd;
+    }
+
+    .delete.button {
+      margin-left: 15px;
+    }
+
+    .trashed {
+      vertical-align: middle;
+      margin-left: 15px;
+    }
+
+    &.is-trashed span {
+      text-decoration: line-through;
+    }
+  }
+}
+
+.add-task {
+  .task-name {
+    display: block;
+    margin: 10px 0;
+
+    input {
+      width: 100%;
+      height: 40px;
+      border-radius: 3px;
+      border: 1px solid #d3d3d3;
+      padding: 5px;
+      -webkit-appearance: none;
+      font-size: 20px;
+    }
+  }
+}
