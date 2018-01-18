@@ -1,0 +1,13 @@
+{
+  "name": "Tasky",
+  "short_name": "tasky",
+  "icons": [
+    {
+      "src": "/static/img/icons/favicon.ico",
+      "sizes": "32x32",
+      "type": "image/png"
+    }
+  ],
+  "start_url": "/index.html",
+  "display": "standalone"
+}
