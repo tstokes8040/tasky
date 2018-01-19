@@ -1,22 +1,22 @@
-$color-main: #1874cd;
-$heading-font: 'Gloria Hallelujah', cursive;
-$main-font: 'Roboto', sans-serif;
-$color-even: #dedede;
-$color-odd: #fff;
+@color-main: #1874cd;
+@heading-font: 'Gloria Hallelujah', cursive;
+@main-font: 'Roboto', sans-serif;
+@color-even: #dedede;
+@color-odd: #fff;
 
 body {
   background: #5b656f;
-  font-family: $main-font;
+  font-family: @main-font;
 }
 
 h1 {
-  font-family: $heading-font;
+  font-family: @heading-font;
   text-align: center;
   color: #fff;
   font-size: 3em;
 }
 
-h1, h2 { 
+h1, h2 {
   margin: 0;
 }
 
@@ -42,7 +42,7 @@ p {
   overflow: auto;
 
   h2 {
-    color: $color-main;
+    color: @color-main;
     font-size: 1.4em;
   }
 }
@@ -51,7 +51,7 @@ p {
   -webkit-appearance: none;
   border-radius: 0;
   border: 0;
-  background: $color-main;
+  background: @color-main;
   color: #fff;
   padding: 5px 10px;
   height: 30px;
@@ -64,7 +64,7 @@ p {
 }
 
 .task-list {
-  font-family: $main-font;
+  font-family: @main-font;
   margin: 20px 0 20px;
   font-size: 1.2em;
   border: 1px solid #000;
@@ -77,11 +77,11 @@ p {
     padding: 10px;
 
     &.even {
-      background: $color-even;
+      background: @color-even;
     }
 
     &.odd {
-      background: $color-odd;
+      background: @color-odd;
     }
 
     .delete.button {
