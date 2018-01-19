@@ -3,8 +3,8 @@
     <title>Tasky</title>
     <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Gloria+Hallelujah" rel="stylesheet">
-    <script src="app.js"></script>
-    <link rel="stylesheet" type="text/css" href="styles.css"/>
+    <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+    <link rel="stylesheet" type="text/css" href="main.min.css"/>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="shortcut icon" type="image/png" href="favicon.ico"/>
 </head>
@@ -18,10 +18,11 @@
         <div class="add-task">
             <label>New Task:</label>
             <span class="task-name"><input type="text" name="task_name" maxlength="100"></span>
-            <button class="add-task button" type="button">Add new Task</button>
+            <button v-on:click="addButton" class="add-task button" type="button">Add new Task</button>
             <button class="delete-all button" type="button">Delete All</button>
         </div>
     </div>
 </div>
+<script src="app.js"></script>
 </body>
 </html>

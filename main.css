@@ -1,20 +1,23 @@
 body {
   background: #5b656f;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
 }
+
 h1 {
-  font-family: 'Gloria Hallelujah', cursive;
+  font-family: "Gloria Hallelujah", cursive;
   text-align: center;
   color: #fff;
   font-size: 3em;
 }
-h1,
-h2 {
+
+h1, h2 {
   margin: 0;
 }
+
 p {
   margin: 0;
 }
+
 .content {
   position: absolute;
   left: 50%;
@@ -23,6 +26,7 @@ p {
   width: 500px;
   max-width: 96%;
 }
+
 .white-box {
   background: #fff;
   border-radius: 3px;
@@ -31,10 +35,12 @@ p {
   max-height: 600px;
   overflow: auto;
 }
+
 .white-box h2 {
   color: #1874cd;
   font-size: 1.4em;
 }
+
 .button {
   -webkit-appearance: none;
   border-radius: 0;
@@ -44,18 +50,22 @@ p {
   padding: 5px 10px;
   height: 30px;
 }
+
 .button:hover {
   cursor: pointer;
 }
+
 .button.delete-all {
   margin-top: 10px;
 }
+
 .task-list {
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   margin: 20px 0 20px;
   font-size: 1.2em;
   border: 1px solid #000;
 }
+
 .task-list .task {
   display: flex;
   justify-content: space-between;
@@ -63,26 +73,33 @@ p {
   flex-wrap: wrap;
   padding: 10px;
 }
+
 .task-list .task.even {
   background: #dedede;
 }
+
 .task-list .task.odd {
   background: #fff;
 }
+
 .task-list .task .delete.button {
   margin-left: 15px;
 }
+
 .task-list .task .trashed {
   vertical-align: middle;
   margin-left: 15px;
 }
+
 .task-list .task.is-trashed span {
   text-decoration: line-through;
 }
+
 .add-task .task-name {
   display: block;
   margin: 10px 0;
 }
+
 .add-task .task-name input {
   width: 100%;
   height: 40px;
